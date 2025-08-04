@@ -1,5 +1,12 @@
 .style-module_loaderTab__k1aW5 {
-    background-color: hsla(215, 50%, 90%, 1) !important; 
+  background-color: hsla(215, 50%, 90%, 1) !important;
+  border: 1px solid hsla(0, 0%, 0%, 0.15) !important;
+}
 
-    border: 1px solid hsla(0, 0%, 0%, 0.15) !important; 
+/* Explicitly also apply for dark mode, with the same styles */
+@media (prefers-color-scheme: dark) {
+  .style-module_loaderTab__k1aW5 {
+    background-color: hsla(215, 50%, 90%, 1) !important;
+    border: 1px solid hsla(0, 0%, 0%, 0.15) !important;
+  }
 }
