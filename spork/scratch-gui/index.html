@@ -8,24 +8,11 @@
     <link rel="shortcut icon" href="static/favicon.ico">
     <title>Scratch 3.0 GUI</title>
     <script defer="defer" src="gui.js"></script>
-
-    <script id="eureka-script" src="eureka.js"></script>
-    <script>
-        document.getElementById('eureka-script').addEventListener('load', () => {
-            fetch('custom.css')
-                .then(response => response.text())
-                .then(cssText => {
-                    const style = document.createElement('style');
-                    style.textContent = cssText;
-                    document.head.appendChild(style);
-                })
-                .catch(err => console.error('Failed to load custom.css:', err));
-        });
-    </script>
+    <script src="eureka.js"></script>
+    <link rel="stylesheet" href="custom.css">
     <script></script>
 </head>
 
 <body></body>
 <div>Hello. :D</div>
-
 </html>
