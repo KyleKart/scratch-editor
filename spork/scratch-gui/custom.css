@@ -3,10 +3,24 @@
   border: 1px solid hsla(0, 0%, 0%, 0.15) !important;
 }
 
-/* Explicitly also apply for dark mode, with the same styles */
 @media (prefers-color-scheme: dark) {
   .style-module_loaderTab__k1aW5 {
     background-color: hsla(215, 50%, 90%, 1) !important;
     border: 1px solid hsla(0, 0%, 0%, 0.15) !important;
   }
+}
+
+.style-module_input__Q42R1 {
+    --un-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--un-bg-opacity)) !important; 
+    border-color: var(--eureka-black-transparent) !important; 
+
+}
+
+@media (prefers-color-scheme: dark) {
+    .style-module_input__Q42R1 {
+    --un-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--un-bg-opacity)) !important; 
+    border-color: var(--eureka-black-transparent) !important;  
+    }
 }
